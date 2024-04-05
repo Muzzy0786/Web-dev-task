@@ -1,0 +1,167 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  border: 10px solid #343a40; /
+}
+
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#head p {
+  background-color: #6c757d;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#content p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+#title h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #343a40;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.column:hover {
+  transform: translateY(-10px);
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.img-container {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-container i {
+  color: #6c757d;
+  font-size: 2rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icons a {
+  margin: 0 10px;
+}
+
+
+@keyframes colorChange {
+  0% {
+    background-color: #f8f9fa;
+  }
+  50% {
+    background-color: #d1ecf1;
+  }
+  100% {
+    background-color: #f8f9fa;
+  }
+}
+
+body {
+  animation: colorChange 10s infinite; 
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .column {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+
+
+h2,
+h3 {
+  text-align: center;
+}
+
+
+.icons a i {
+  color: #007bff; 
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments for symbols */
+@media screen and (max-width: 576px) {
+  .icons a i {
+    font-size: 1.2rem;
+  }
+}
